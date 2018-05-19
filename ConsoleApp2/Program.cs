@@ -22,6 +22,8 @@ namespace ConsoleApp2
                 System.IO.TextReader readFile = new StreamReader(@"Provider1.txt");
                 System.IO.TextReader readFile2 = new StreamReader(@"Provider2.txt");
                 System.IO.TextReader readFile3 = new StreamReader(@"Provider3.txt");
+                String strContinue;
+                
                 //reading and parsing first file
                 var csv = new CsvReader(readFile);
                 string format = "M/dd/yyyy H:mm:ss";
@@ -144,34 +146,39 @@ namespace ConsoleApp2
                 {
                     Console.WriteLine(flightDetail.Origin + " --> " + flightDetail.Destination + " (" + flightDetail.DepartureTime + " --> " + flightDetail.DestinationTime + ")" + " - $" + flightDetail.Price);
                 }
-                Console.WriteLine("Please Enter Origin");
-                String strOriginInput = Console.ReadLine();
-                Console.WriteLine("Please Enter Destination");
-                String strDestinationInput = Console.ReadLine();
-                Console.WriteLine("search Flights -o " + strOriginInput.ToUpper() + " -d " + strDestinationInput.ToUpper());
-
-                List<FlightDetails> searchedResults = new List<FlightDetails>();
-                foreach (FlightDetails flightDetail in lst)
+                do
                 {
-                   if(flightDetail.Origin == strOriginInput.ToUpper() && flightDetail.Destination == strDestinationInput.ToUpper())
-                    {
-                        searchedResults.Add(flightDetail);
-                    }
-                }
+                    Console.WriteLine("Please Enter Origin");
+                    String strOriginInput = Console.ReadLine();
+                    Console.WriteLine("Please Enter Destination");
+                    String strDestinationInput = Console.ReadLine();
+                    Console.WriteLine("search Flights -o " + strOriginInput.ToUpper() + " -d " + strDestinationInput.ToUpper());
 
-                if (searchedResults.Count > 1)
-                {
-                    Console.WriteLine("Origin-->Destination (DepartureTime-->DestinationTime) - Price");
-                    foreach (FlightDetails flightDetail in searchedResults)
+                    List<FlightDetails> searchedResults = new List<FlightDetails>();
+                    foreach (FlightDetails flightDetail in lst)
                     {
-                        Console.WriteLine(flightDetail.Origin + " --> " + flightDetail.Destination + " (" + flightDetail.DepartureTime + " --> " + flightDetail.DestinationTime + ")" + " - $" + flightDetail.Price);
+                        if (flightDetail.Origin == strOriginInput.ToUpper() && flightDetail.Destination == strDestinationInput.ToUpper())
+                        {
+                            searchedResults.Add(flightDetail);
+                        }
                     }
 
-                }
-                else
-                {
-                    Console.WriteLine("No Flights for " + strOriginInput + "-->" + strDestinationInput);
-                }
+                    if (searchedResults.Count > 1)
+                    {
+                        Console.WriteLine("Origin-->Destination (DepartureTime-->DestinationTime) - Price");
+                        foreach (FlightDetails flightDetail in searchedResults)
+                        {
+                            Console.WriteLine(flightDetail.Origin + " --> " + flightDetail.Destination + " (" + flightDetail.DepartureTime + " --> " + flightDetail.DestinationTime + ")" + " - $" + flightDetail.Price);
+                        }
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("No Flights for " + strOriginInput + "-->" + strDestinationInput);
+                    }
+                    Console.WriteLine(" >>>>> Please enter Y if you want to search more flights !!");
+                     strContinue = Console.ReadLine();
+                } while (strContinue.ToUpper() == "Y");
 
                 Console.ReadLine();
             }
