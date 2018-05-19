@@ -139,10 +139,10 @@ namespace ConsoleApp2
                     else
                         index++;
                 }
-                Console.WriteLine("Origin-->Destination (DepartureTime-->DestinationTime) Price");
+                Console.WriteLine("Origin-->Destination (DepartureTime-->DestinationTime) - Price");
                 foreach (FlightDetails flightDetail in lst)
                 {
-                    Console.WriteLine(flightDetail.Origin + " --> " + flightDetail.Destination + " ( " + flightDetail.DepartureTime + " --> " + flightDetail.DestinationTime + ")" + "-$" + flightDetail.Price);
+                    Console.WriteLine(flightDetail.Origin + " --> " + flightDetail.Destination + " ( " + flightDetail.DepartureTime + " --> " + flightDetail.DestinationTime + ")" + " - $" + flightDetail.Price);
                 }
                 Console.WriteLine("Please Enter Origin");
                 String strOriginInput = Console.ReadLine();
@@ -161,10 +161,10 @@ namespace ConsoleApp2
 
                 if (searchedResults.Count > 1)
                 {
-                    Console.WriteLine("Origin-->Destination (DepartureTime-->DestinationTime) Price");
+                    Console.WriteLine("Origin-->Destination (DepartureTime-->DestinationTime) - Price");
                     foreach (FlightDetails flightDetail in searchedResults)
                     {
-                        Console.WriteLine(flightDetail.Origin + " --> " + flightDetail.Destination + " ( " + flightDetail.DepartureTime + " --> " + flightDetail.DestinationTime + ")" + "-$" + flightDetail.Price);
+                        Console.WriteLine(flightDetail.Origin + " --> " + flightDetail.Destination + " ( " + flightDetail.DepartureTime + " --> " + flightDetail.DestinationTime + ")" + " - $" + flightDetail.Price);
                     }
 
                 }
