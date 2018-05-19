@@ -142,13 +142,13 @@ namespace ConsoleApp2
                 Console.WriteLine("Origin-->Destination (DepartureTime-->DestinationTime) - Price");
                 foreach (FlightDetails flightDetail in lst)
                 {
-                    Console.WriteLine(flightDetail.Origin + " --> " + flightDetail.Destination + " ( " + flightDetail.DepartureTime + " --> " + flightDetail.DestinationTime + ")" + " - $" + flightDetail.Price);
+                    Console.WriteLine(flightDetail.Origin + " --> " + flightDetail.Destination + " (" + flightDetail.DepartureTime + " --> " + flightDetail.DestinationTime + ")" + " - $" + flightDetail.Price);
                 }
                 Console.WriteLine("Please Enter Origin");
                 String strOriginInput = Console.ReadLine();
                 Console.WriteLine("Please Enter Destination");
                 String strDestinationInput = Console.ReadLine();
-                Console.WriteLine("search Flights -o " + strOriginInput + " -d " + strDestinationInput);
+                Console.WriteLine("search Flights -o " + strOriginInput.ToUpper() + " -d " + strDestinationInput.ToUpper());
 
                 List<FlightDetails> searchedResults = new List<FlightDetails>();
                 foreach (FlightDetails flightDetail in lst)
@@ -164,7 +164,7 @@ namespace ConsoleApp2
                     Console.WriteLine("Origin-->Destination (DepartureTime-->DestinationTime) - Price");
                     foreach (FlightDetails flightDetail in searchedResults)
                     {
-                        Console.WriteLine(flightDetail.Origin + " --> " + flightDetail.Destination + " ( " + flightDetail.DepartureTime + " --> " + flightDetail.DestinationTime + ")" + " - $" + flightDetail.Price);
+                        Console.WriteLine(flightDetail.Origin + " --> " + flightDetail.Destination + " (" + flightDetail.DepartureTime + " --> " + flightDetail.DestinationTime + ")" + " - $" + flightDetail.Price);
                     }
 
                 }
