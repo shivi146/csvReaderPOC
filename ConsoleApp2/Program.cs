@@ -127,19 +127,10 @@ namespace ConsoleApp2
                     lst.Add(flightDetails);
                 }
                 readFile3.Close();
-
-
-                //foreach (FlightDetails flightDetail in lst)
-                //{
-                //    Console.WriteLine(flightDetail.Origin   + " --> " +  flightDetail.Destination +" ( "+flightDetail.DepartureTime + " --> "+flightDetail.DestinationTime+")" +"-$"+flightDetail.Price);
-                //}
-                                  
-               
-
-                Console.WriteLine(">>>>>>>>>>>>>>>>>>>SORTED&DISTICT<<<<<<<<<<<<<<<<<<<<<<");
+                                                
+                //Console.WriteLine(">>>>>>>>>>>>>>>>>>>SORTED&DISTICT<<<<<<<<<<<<<<<<<<<<<<");
                 lst.Sort(new CompareProduct());
                 //removing duplicates
-                   
                 Int32 index = 0;
                 while (index < lst.Count - 1)
                 {
@@ -148,7 +139,7 @@ namespace ConsoleApp2
                     else
                         index++;
                 }
-                
+                Console.WriteLine("Origin-->Destination (DepartureTime-->DestinationTime) Price");
                 foreach (FlightDetails flightDetail in lst)
                 {
                     Console.WriteLine(flightDetail.Origin + " --> " + flightDetail.Destination + " ( " + flightDetail.DepartureTime + " --> " + flightDetail.DestinationTime + ")" + "-$" + flightDetail.Price);
@@ -170,6 +161,7 @@ namespace ConsoleApp2
 
                 if (searchedResults.Count > 1)
                 {
+                    Console.WriteLine("Origin-->Destination (DepartureTime-->DestinationTime) Price");
                     foreach (FlightDetails flightDetail in searchedResults)
                     {
                         Console.WriteLine(flightDetail.Origin + " --> " + flightDetail.Destination + " ( " + flightDetail.DepartureTime + " --> " + flightDetail.DestinationTime + ")" + "-$" + flightDetail.Price);
