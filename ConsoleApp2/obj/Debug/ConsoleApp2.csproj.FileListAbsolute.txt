@@ -1,0 +1,12 @@
+c:\users\rishab\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+c:\users\rishab\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+c:\users\rishab\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+c:\users\rishab\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.csprojResolveAssemblyReference.cache
+c:\users\rishab\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
+c:\users\rishab\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+c:\users\rishab\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
+c:\users\rishab\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\CsvHelper.dll
+c:\users\rishab\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\CsvHelper.xml
+C:\Users\Rishab\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\Provider1.txt
+C:\Users\Rishab\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\Provider2.txt
+C:\Users\Rishab\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\Provider3.txt
