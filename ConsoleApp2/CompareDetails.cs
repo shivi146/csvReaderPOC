@@ -9,7 +9,7 @@ namespace ConsoleApp2
 
     class CompareProduct : Comparer<FlightDetails>
     {
-        // Compares by Length, Height, and Width.
+        
         public override int Compare(FlightDetails x, FlightDetails y)
         {
          

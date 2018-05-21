@@ -29,11 +29,6 @@ namespace ConsoleApp2
             Price = price;
         }
 
-
-        
-
-
-
         public double CompareTo(FlightDetails other)
         {
                              
