@@ -10,3 +10,15 @@ c:\users\rishab\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\CsvHelper.xml
 C:\Users\Rishab\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\Provider1.txt
 C:\Users\Rishab\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\Provider2.txt
 C:\Users\Rishab\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\Provider3.txt
+C:\Users\Rishab\source\repos\csvReaderPOC\ConsoleApp2\bin\Debug\Provider1.txt
+C:\Users\Rishab\source\repos\csvReaderPOC\ConsoleApp2\bin\Debug\Provider2.txt
+C:\Users\Rishab\source\repos\csvReaderPOC\ConsoleApp2\bin\Debug\Provider3.txt
+C:\Users\Rishab\source\repos\csvReaderPOC\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+C:\Users\Rishab\source\repos\csvReaderPOC\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+C:\Users\Rishab\source\repos\csvReaderPOC\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+C:\Users\Rishab\source\repos\csvReaderPOC\ConsoleApp2\bin\Debug\CsvHelper.dll
+C:\Users\Rishab\source\repos\csvReaderPOC\ConsoleApp2\bin\Debug\CsvHelper.xml
+C:\Users\Rishab\source\repos\csvReaderPOC\ConsoleApp2\obj\Debug\ConsoleApp2.csprojResolveAssemblyReference.cache
+C:\Users\Rishab\source\repos\csvReaderPOC\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
+C:\Users\Rishab\source\repos\csvReaderPOC\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+C:\Users\Rishab\source\repos\csvReaderPOC\ConsoleApp2\obj\Debug\ConsoleApp2.pdb

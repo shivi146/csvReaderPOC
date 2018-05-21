@@ -180,11 +180,10 @@ namespace ConsoleApp2
                      strContinue = Console.ReadLine();
                 } while (strContinue.ToUpper() == "Y");
 
-                Console.ReadLine();
             }
             catch (IOException ex)
             {
-                Console.WriteLine(ex.ToString());
+                Console.WriteLine(ex.StackTrace);
             }
           
         }
